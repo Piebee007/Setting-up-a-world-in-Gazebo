@@ -145,6 +145,8 @@ def generate_launch_description():
     
     `colcon build`
     
-2. 
+2. Open another new terminal and type in this command:
+
+    `ros2 launch two_wheeled_robot *insert_launch_file_name*.launch.py`
  
     
