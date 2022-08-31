@@ -39,7 +39,7 @@ __Follow these steps first. Only go to option 2 if you can't save the Gazebo wor
 7. Delete the model from your world
 8. Insert the model (from the insert tab)
 9. Repeat these steps until you have created your desired world 
-10. To save the world
+10. To save the world, go to File -> Save World As (Ctrl + shift + s)
 
 ### Option 2 ###
 __If you encounter an issue where you can't save your gazebo world, follow these steps__
@@ -67,7 +67,15 @@ __If you encounter an issue where you can't save your gazebo world, follow these
           <shader type='pixel'/>
         </material>
     ```
-    
+4. Delete the model from your world
+5. Insert the model (from the insert tab)
+6. Repeat these steps until you have created your desired world 
+7. To save the world, go to File -> Save World As (Ctrl + shift + s)
+   
+   
+## How to launch the world ##
+
+
     
  
     
