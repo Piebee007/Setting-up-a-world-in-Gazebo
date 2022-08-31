@@ -102,8 +102,42 @@ __If you encounter an issue where you can't save your gazebo world, follow these
     
     
 ## Creating a map for RVIZ ##
+Creating a map for rviz involves taking a picture of the floor plan (either .png or .jpeg) and outputs a .pmg and a .yaml file which sets the scale of the map
 
-1. Add the files needed
+1. Add the files needed which is in the _maps_ folder in the root directory 
+    1. Add the file [convert_to_binary.py](https://github.com/Piebee007/Setting-up-a-world-in-Gazebo/blob/main/convert_to_binary.py)
+    2. Add the file [MakeROSMap.py](https://github.com/Piebee007/Setting-up-a-world-in-Gazebo/blob/main/MakeROSMap.py)
+    
+2. Convert the floorplan to binary and then make the ros map
+
+    To run code do `python3 *insert file name here*` in a terminal
+    
+    Follow the prompts  in the terminal
+    
+3. Edit the .yaml file
+    
+    
+    
+## Launch RVIZ ##
+
+### Editing the launch file: ###
+Change the file names in the [launch file](https://github.com/Piebee007/Setting-up-a-world-in-Gazebo/edit/main/isa_world_v1.launch.py)
+``` py
+def generate_launch_description():
+  package_name = 'two_wheeled_robot'
+  robot_name_in_model = 'two_wheeled_robot'
+  default_launch_dir = 'launch'
+  gazebo_models_path = 'models'
+  map_file_path = 'maps/CHANGE_ME.yaml'
+  nav2_params_path = 'params/CHANGE_ME/nav2_params.yaml'
+  robot_localization_file_path = 'config/ekf.yaml'
+  rviz_config_file_path = 'rviz/CHANGE_ME/nav2_config.rviz'
+  sdf_model_path = 'models/two_wheeled_robot_description/model.sdf'
+  urdf_file_path = 'urdf/two_wheeled_robot.urdf'
+  world_file_path = 'worlds/CHANGE_ME.world'
+
+```
+
 
     
  
