@@ -21,13 +21,13 @@ def generate_launch_description():
   robot_name_in_model = 'two_wheeled_robot'
   default_launch_dir = 'launch'
   gazebo_models_path = 'models'
-  map_file_path = 'maps/GroundFloorMap.yaml'
-  nav2_params_path = 'params/office_world/nav2_params.yaml'
+  map_file_path = 'maps/CHANGE_ME.yaml'
+  nav2_params_path = 'params/CHANGE_ME/nav2_params.yaml'
   robot_localization_file_path = 'config/ekf.yaml'
-  rviz_config_file_path = 'rviz/office_world/nav2_config.rviz'
+  rviz_config_file_path = 'rviz/CHANGE_ME/nav2_config.rviz'
   sdf_model_path = 'models/two_wheeled_robot_description/model.sdf'
   urdf_file_path = 'urdf/two_wheeled_robot.urdf'
-  world_file_path = 'worlds/ISAGroundFloorWorldV4.world'
+  world_file_path = 'worlds/CHANGE_ME.world'
   
   # Pose where we want to spawn the robot
   spawn_x_val = '-18.5'
