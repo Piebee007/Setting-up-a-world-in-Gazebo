@@ -84,6 +84,7 @@ __If you encounter an issue where you can't save your gazebo world, follow these
     `gedit load_world_into_gazebo.launch.py`
 2. Add the code from the _load_world_into_gazebo.launch.py_ file which is in the repository
 
+[Named Link](https://github.com/Piebee007/Setting-up-a-world-in-Gazebo/blob/main/load_world_into_gazebo.launch.py/ "Test")
     
  
     
