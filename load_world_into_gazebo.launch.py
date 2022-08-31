@@ -21,7 +21,7 @@ def generate_launch_description():
   pkg_share = FindPackageShare(package='two_wheeled_robot').find('two_wheeled_robot')
  
   # Set the path to the world file
-  world_file_name = 'ISAGroundFloorWorldV2.world'
+  world_file_name = 'CHANGE_ME.world'
   world_path = os.path.join(pkg_share, 'worlds', world_file_name)
    
   # Set the path to the SDF model files.
