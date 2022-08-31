@@ -137,8 +137,14 @@ def generate_launch_description():
   world_file_path = 'worlds/CHANGE_ME.world'
 
 ```
+### Launching ###
 
+1. Open a new terminal and go to the root directory and build the files
 
+    `cd ~/dev_ws`
     
+    `colcon build`
+    
+2. 
  
     
