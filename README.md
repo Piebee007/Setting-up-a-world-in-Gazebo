@@ -82,9 +82,29 @@ __If you encounter an issue where you can't save your gazebo world, follow these
     `cd launch`
 
     `gedit load_world_into_gazebo.launch.py`
-2. Add the code from the _load_world_into_gazebo.launch.py_ file which is in the repository
+2. Add the code from the [load_world_into_gazebo.launch.py](https://github.com/Piebee007/Setting-up-a-world-in-Gazebo/blob/main/load_world_into_gazebo.launch.py/ "load_world_into_gazebo.launch.py") file which is in the repository
+3. Change line 24 from 
+    `world_file_name = 'CHANGE_ME.world'`
+    to the name of your world
+4. Save the file and close it
+5. Go to your root directory
 
-[Named Link](https://github.com/Piebee007/Setting-up-a-world-in-Gazebo/blob/main/load_world_into_gazebo.launch.py/ "Test")
+    `cd ~/dev_ws`
+    
+6. Build the package
+
+    `colcon build`
+    
+7. Open a new terminal  and run the launch file using this command:
+
+    `ros2 launch two_wheeled_robot load_world_into+gazebo.launch.py`
+    
+    
+    
+## Creating a map for RVIZ ##
+
+1. Add the files needed
+
     
  
     
