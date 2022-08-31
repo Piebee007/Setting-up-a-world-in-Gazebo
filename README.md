@@ -2,7 +2,21 @@
 All the details (and unique quirks) that I found out during my Summer Internship
 
 ## Prerequisites: ##
+* [ROS2 Galactic](https://automaticaddison.com/how-to-install-ros-2-foxy-fitzroy-on-ubuntu-linux/) installed on Ubuntu Linux 20.04
+    * _Note: this tutorial is designed for Ros2 Foxy so replace all "__foxy__"  with "__galactic__"_
+* You have [created a ROS 2 workspace](https://automaticaddison.com/how-to-create-a-workspace-ros-2-foxy-fitzroy/) (I had "__dev_ws__")
+* Python 3.7 installed
+* You have a package named __two_wheeled_robot__ inside __~/dev_ws/src__
+    * From this [tutorial](https://automaticaddison.com/how-to-load-a-urdf-file-into-rviz-ros-2/)
 
+
+## Useful Resources ##
+A very useful series of websites is made by AutomaticAddison. Some of the sections in the website is out of date so take all the files from [their Github](https://github.com/automaticaddison/two_wheeled_robot)
+
+If in doubt:
+* StackOverflow
+* Gazebo Answers
+* ROS Answers
 
 ## Adding a custom model to Gazebo: ##
 ### Option 1 ###
@@ -104,6 +118,8 @@ __If you encounter an issue where you can't save your gazebo world, follow these
 ## Creating a map for RVIZ ##
 Creating a map for rviz involves taking a picture of the floor plan (either .png or .jpeg) and outputs a .pmg and a .yaml file which sets the scale of the map
 
+__BE AWARE:__ door diagrams and other marks in the picture will be perceived as a wall. Use software like paint to remove the unnecessary information
+
 1. Add the files needed which is in the _maps_ folder in the root directory 
     1. Add the file [convert_to_binary.py](https://github.com/Piebee007/Setting-up-a-world-in-Gazebo/blob/main/convert_to_binary.py)
     2. Add the file [MakeROSMap.py](https://github.com/Piebee007/Setting-up-a-world-in-Gazebo/blob/main/MakeROSMap.py)
@@ -139,6 +155,8 @@ def generate_launch_description():
 ```
 ### Launching ###
 
+__Note:__ After any edit of any file, you must rebuild the file
+
 1. Open a new terminal and go to the root directory and build the files
 
     `cd ~/dev_ws`
@@ -150,3 +168,15 @@ def generate_launch_description():
     `ros2 launch two_wheeled_robot *insert_launch_file_name*.launch.py`
  
     
+    
+### Setting up the Camera ###
+Assumption that the two_wheeled_robot 's .sdf and .udrf has been set up for using a camera
+
+1. Click on the button "__ADD__" which is on the left of the screen
+2. Go to __By topic -> /depth camera/ image__ and click __OK__
+3. Find the __image__ in the Display section (on the left of the screen)
+4. Go to __Topic -> Reliaility Pollicy__ and change from "__Reliable__" to "__Best Effort__"
+
+*Note: You can drag the image section out of  the rviz window to have a seperate window of what the robot camera is seeing*
+
+
