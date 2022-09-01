@@ -123,14 +123,16 @@ __BE AWARE:__ door diagrams and other marks in the picture will be perceived as 
 1. Add the files needed which is in the _maps_ folder in the root directory 
     1. Add the file [convert_to_binary.py](https://github.com/Piebee007/Setting-up-a-world-in-Gazebo/blob/main/convert_to_binary.py)
     2. Add the file [MakeROSMap.py](https://github.com/Piebee007/Setting-up-a-world-in-Gazebo/blob/main/MakeROSMap.py)
-    
-2. Convert the floorplan to binary and then make the ros map
+  
+2. Change the file names in the "__convert_to_binary.py__" indicated by the __CHANGE_ME__
+
+3. Convert the floorplan to binary and then make the ros map
 
     To run code do `python3 *insert file name here*` in a terminal
     
     Follow the prompts  in the terminal
     
-3. Edit the .yaml file
+4. Edit the .yaml file kjhdsakjhsakjdhfkjsdhgkjsfkjheksjfhkjhkjdhksjhkjhkjhkjhkjkjhkjhkjh
     
     
     
