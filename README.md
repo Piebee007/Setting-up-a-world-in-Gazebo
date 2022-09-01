@@ -59,7 +59,7 @@ __Follow these steps first. Only go to option 2 if you can't save the Gazebo wor
 __If you encounter an issue where you can't save your gazebo world, follow these steps__
 1. Load up Gazebo using sudo
 
-        `sudo gazebo`
+        `sudo gazebo --verbose`
         
 2. Follow steps 2 - 5 in __Option 1__
 3. To change the model from grey to the textures you added:
