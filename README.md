@@ -111,7 +111,7 @@ __If you encounter an issue where you can't save your gazebo world, follow these
     
 7. Open a new terminal  and run the launch file using this command:
 
-    `ros2 launch two_wheeled_robot load_world_into+gazebo.launch.py`
+    `ros2 launch two_wheeled_robot load_world_into_gazebo.launch.py`
     
     
     
