@@ -3,6 +3,12 @@
 ## Editing the model ##
 The __best__ thing to do to edit the model would be with Blender.
 
+# __IMPORTANT!!!__ #
+When seperating the glass and the gazebo model, seperate the glass, copy the new object in a new file and export that.
+Then go back to the building model before the glass has been seperated and delete the glass faces.
+This will cause there to be an "invisible" floor which __will cause CHAOS__
+
+If floating robot/invisible wall showing on Lider, send a message as it is a complete nightmare!
 
 # Glass and Gazebo # 
 Glass from Blender __won't__ be transfered to Gazebo.
@@ -16,3 +22,6 @@ Steps to overcome this:
 
 
 ## Exporting model ##
+
+1. Go to file -> export -> collada
+2. Choose where you want the file (in the same folder as your textures)
