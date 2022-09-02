@@ -85,7 +85,21 @@ __If you encounter an issue where you can't save your gazebo world, follow these
 5. Insert the model (from the insert tab)
 6. Repeat these steps until you have created your desired world 
 7. To save the world, go to File -> Save World As (Ctrl + shift + s)
-   
+  
+## Make a world ##
+
+1. Open Gazebo
+2. Add what ever models to your world that you would like
+3. Save the model in thee __two_wheeled_robots/worlds__ folder 
+4. Open up that file and paste this section of code at the end just above __</world>__:
+   ```  
+   <include>
+    <uri>model://two_wheeled_robot_description</uri>
+    <static>false</static>
+    <pose>-20.0 4.0 3.5 0 0 0</pose>
+   </include> 
+   ```
+  
    
 ## How to launch the world ##
 
