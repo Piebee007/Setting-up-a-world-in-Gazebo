@@ -196,3 +196,16 @@ Assumption that the two_wheeled_robot 's .sdf and .udrf has been set up for usin
 *Note: You can drag the image section out of  the rviz window to have a seperate window of what the robot camera is seeing*
 
 
+### Moving the robot ###
+
+To install the the package type this command:
+
+`sudo apt-get install ros-galactic-rqt-robot-steering`
+
+Then open a new terminal and to run the program type this command:
+
+`rqt_robot_steering`
+
+You can either interact with the GUI with your __mouse__ or using __WASD__ to move the robot.
+
+*Note: Having the camera set up makes moving the robot around a lot easier*
